@@ -1,0 +1,72 @@
+{% extends 'layout.html' %}
+
+
+{% block content %}
+<!-- Navbar-->
+<div class="container-fluid d-flex justify-content-around mt-5">
+    <div class="sekil">
+       <a href="#"> <img src="../static/img/logo.png"></a>
+    </div>
+    <div class="basliqlar">
+        <button type="button" class="hamburger" id="hamburger">
+            <i class="fa fa-bars" style="font-size:36px"></i>
+        </button>
+        <ul id="menu" class="basliq d-flex">
+           <li> <a href="index.html" class="cool-link">Əsas Səhifə</a></li>
+           <li><a href="cv.html" class="cool-link">Cv Nümunələri</a></li>
+           <li> <a href="movzu1.html" class="cool-link">Faydalı Məlumatlar</a></li>
+           <li><a href="#" class="cool-link">Haqqımızda</a></li>
+            <div id=marker></div>
+        </ul>
+    </div>
+    <div class="elaqe  d-flex">
+        <img src="../static/img/telefon.png">
+        <h3 class="biz d-flex">BİZƏ</h3>&nbsp;&nbsp;
+        <h3 class="d-flex basqa">ZƏNG EDİN</h3>
+        <p class="nomre">+99455 634 91 01 <br>+99450 482 68 68</p>
+    </div>
+</div>
+
+<div class="xet"></div>
+
+<div class="container-fluid orta d-flex flex-wrap justify-content-around">
+
+
+    <div class="sekil4">
+        <p>CV nümunələri / {{post.kod}} / Ətraflı məlumat</p>
+        <img src="../static/upload/{{post.img}}" class="img6">
+      
+    </div>
+
+    <div class="row">
+        <div class="yazilar2">
+            <h2>Senior: 12.07</h2>
+            <p class="kod"><b>{{post.kod}}</b></p>
+            <p class="qiymet1">{{post.azSalary}}</p>
+            <p class="qiymet2">{{post.enSalary}}</p>
+            <h5><b>Senior CV , 5 ildən az iş təcrübəsi olan namizədlər üçün uyğundur.</b></h5>
+           
+            <p class="qiymet3">  • Bütün peşələrə tətbiq oluna bilər.<br>
+                • Rəng dəyişdirmək mümkündür.<br>
+                • Məzmun namizədin CV məlumatlarına uyğun olaraq dəyişdirilə bilər.<br>
+                • Rəqəmsal formatda poçt vasitəsilə ən çox 3 gün ərzində çatdırılır.</p>
+              <br> 
+              <p class="qiymet4">CV hazırlama xidməti üçün xahiş edirəm bizimlə əlaqə saxlayın.</p>
+              <div class="quantity buttons_added">
+                <input type="button" value="-" class="minus"><input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="button" value="+" class="plus">
+            </div>
+              <button type="button" class="button_4">Sifariş et</button>
+            </div>
+    </div>
+</div>
+
+<hr>
+
+{% endblock content %}
+
+
+
+
+
+
+

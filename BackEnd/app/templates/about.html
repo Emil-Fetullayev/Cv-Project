@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<form>
+    {{form.name.label}}{{form.name(class='form-control')}}
+    {{form.surname.label}}{{form.surname(class='form-control')}}
+    {{form.submit(class='form-control')}}
+</form>
+
+
+{% endblock %}

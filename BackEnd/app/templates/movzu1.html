@@ -1,0 +1,182 @@
+{% extends 'layout.html' %}
+
+
+
+
+{% block content %}
+<!-- Navbar-->
+<div class="container-fluid d-flex justify-content-around mt-5">
+    <div class="sekil">
+       <a href="#"> <img src="../static/img/logo.png"></a>
+    </div>
+    <div class="basliqlar">
+        <button type="button" class="hamburger" id="hamburger">
+            <i class="fa fa-bars" style="font-size:36px"></i>
+        </button>
+        <ul id="menu" class="basliq d-flex">
+           <li> <a href="/" class="cool-link">Əsas Səhifə</a></li>
+           <li><a href="/cv" class="cool-link">Cv Nümunələri</a></li>
+           <li> <a href="#" class="cool-link">Faydalı Məlumatlar</a></li>
+           <li><a href="/haqqimizda" class="cool-link">Haqqımızda</a></li>
+            <div id=marker></div>
+        </ul>
+    </div>
+    <div class="elaqe  d-flex">
+        <img src="../static/img/telefon.png">
+        <h3 class="biz d-flex">BİZƏ</h3>&nbsp;&nbsp;
+        <h3 class="d-flex basqa">ZƏNG EDİN</h3>
+        <p class="nomre">+99455 634 91 01 <br>+99450 482 68 68</p>
+    </div>
+</div>
+
+<div class="xet"></div>
+
+
+
+<section id="about" class="about">
+    <div class="container-fluid">
+
+      <div class="row">
+     
+        
+        <div class="col-xl-6 col-lg-6 icon-boxes  d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5" data-aos="fade-left">
+             
+            {% for singlePost in content %}
+          
+            <a href="/fayda">
+          <div class="icon-box mb-5" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon"><img src="../static/upload/{{singlePost.img}}"></div>
+            <h4 class="title">{{singlePost.title}}<br>
+                10 tip sual!</h4>
+            <p class="description">{{singlePost.description}}</p>
+          </div>
+        </a>
+          {% endfor %}
+      
+
+          {% for singlePos in con %}
+        <a href="#">
+          <div class="icon-box mb-5 pt-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon"><img src="../static/upload/{{singlePos.img}}"></div>
+            <h4 class="title">{{singlePos.title2}}<br>
+               </h4>
+            <p class="description">{{singlePos.description2}}</p>
+          </div>
+        </a>
+      
+          {% endfor %}
+
+
+          {% for singlePos in cone %}
+        <a href="#">
+          <div class="icon-box mb-5 pt-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon"><img src="../static/upload/{{singlePos.img}}"></div>
+            <h4 class="title">{{singlePos.title3}}<br>
+               </h4>
+            <p class="description">{{singlePos.description3}}</p>
+          </div>
+        </a>
+      
+          {% endfor %}
+
+          
+<!-- 
+          <div class="icon-box1" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon"><img src="../static/img/movzu1.png"></div>
+            <h4 class="title1">İş axtararkən nələrə diqqət etmək lazımdır?</h4>
+            <p class="description">1. Məqsədləriniz olsun. Məqsədləriniz olmalıdır.
+                 Məqsədiniz olmazsa, planınız olmaz; plan olmasa – həyatınızı tənzimləmək
+                  və ona istiqamət vermək üçün xəritəniz yoxdur demək ki. Hər gün səhər
+                   Sizi yuxudan oyadacaq məqsədləriniz yoxdursa, demək ki, çox ciddi 
+                   probleminiz var.<br>
+
+                2. Daim inkişaf edin. Gələcəyinizi, karyeranızı universitetlərə etibar 
+                etməyin. Diplom karyera üçün kifayət deyildir.<br>
+                
+                3. Ruhdan düşməyin. 3-5 yerə CV göndərməklə iş bitməz.
+                </p>
+          </div>
+
+          <div class="icon-box2" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon"><img src="../static/img/movzu.png"></div>
+            <h4 class="title2">CV göndərərkən nələrə diqqət etməliyik?</h4>
+            <p class="description">İdeal hazırlanmış CV və digər mərhələlər hər nə qədər önəmli olsa da, işə müraciət etmə qaydası da bir o qədər vacibdir. İşə qəbul prosesinin hər iki tərəfində olmuş bir insan kimi, xatırlatmaq istəyirəm ki, vakansiyanın bütün tələblərinə cavab versəniz belə vakansiyaya müraciətiniz də böyük əhəmiyyət kəsb edir.
+
+                Aşağıda sizlərə vakansiyalara müraciət edərkən nəzərə almağınız gərəkən bəzi təcrübə və fikirlərimi bölüşəcəm.
+                </p>
+          </div> -->
+
+        </div>
+        <div class="col-xl-6 col-lg-6 pl-5 video-box d-flex justify-content-center align-items-stretch" data-aos="fade-right">
+            <nav class='animated bounceInDown'>
+                <ul>
+                
+                    <li class='sub-menu'><a href='#settings'><b>Kategoriya</b><div class='fa fa-caret-down right'></div></a>
+                        <ul>
+                            <li><a href='#settings'>Faydalı mövzular</a></li></li></ul>
+                            <hr>
+                    <li class='sub-menu'><a href='#settings'><b>Digər mövzular</b><div class='fa fa-caret-down right'></div></a>
+                        <ul>
+                            <li><a href='/fayda'>Fayda Müsahibəyə gedən hər bir şəxsin bilməli olduğu 10 tip sual!</a></li>
+                            <li><a href='#settings'>İş axtaranlara 10 tövsiyə!</a></li>
+                            <li><a href='#settings'>CV göndərərkən nələrə diqqət etməliyik?</a></li>
+                            <li><a href='#settings'>Fayda Müsahibəyə gedən hər bir şəxsin bilməli olduğu 10 tip sual!</a></li>
+                            <li><a href='#settings'>İş axtaranlara 10 tövsiyə!</a></li>
+                    <li><a href='#settings'>CV göndərərkən nələrə diqqət etməliyik</a></li>
+                    <li><a href='#settings'>İş axtaranlara 10 tövsiyə!</a></li>
+                     <li><a href='#settings'>CV göndərərkən nələrə diqqət etməliyik?</a></li>
+                        </ul>
+                    </li>
+                    
+                </ul>
+            </nav>
+          </div>
+      </div>
+
+    </div>
+  </section><!-- End About Section -->
+
+<div class="xet mt-5"></div>
+
+<ul class="pagination justify-content-end">
+    <li class="page-item"><a class="page-link" href="cv.html">1</a></li>
+      <li class="page-item"><a class="page-link" href="/fayda">2</a></li>
+      <li class="page-item"><a class="page-link" href="javascript:void(0);">3</a></li>
+      <li class="page-item"><a class="page-link" href="javascript:void(0);">4</a></li>
+      <li class="page-item"><a class="page-link" href="javascript:void(0);">Sonraki</a></li>
+    </ul>
+
+    <div class="xet mt-3"></div>
+
+
+    <section id="footer">
+        <div class="container">
+            <div class="row text-center text-xs-center text-sm-left text-md-left">
+               
+              
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-3">
+                    <ul class="list-unstyled list-inline social text-center">
+                         <p class="list-inline-item">Bizi izləyin</p>
+                         <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><img src="../static/img/instagram.svg"></a></li>
+                         <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><img src="../static/img/face.svg"></a></li>
+                         <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><img src="../static/img/youtube.svg"></a></li>
+                         <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02" target="_blank"><img src="../static/img/linkedin.svg"></a></li>
+                    </ul>
+                </div>
+                <hr>
+            </div>	
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 text-center text-white">
+                   
+                    <h2 class="h6">“CV HAZIRLAMA” ASC - Bütün hüquqlar qorunur</h2>
+                </div>
+                <hr>
+            </div>	
+        </div>
+    </section>
+
+
+
+    {% endblock content %}

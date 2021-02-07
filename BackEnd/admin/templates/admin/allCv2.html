@@ -1,0 +1,50 @@
+{% extends 'admin/layout.html' %}
+
+
+{% block pageContent %}
+
+    <h1 class="mt-4">Butun Xeberler</h1>
+  
+    <div class="card mb-4">
+        <div class="card-header">
+            <i class="fas fa-table mr-1"></i>
+            DataTable Example
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>ID-si</th>
+                            <th>Kod</th>
+                            <th>Az</th>
+                            <th>En</th>
+                            <th>Img</th>
+                        
+                            <th>Sil</th>
+                            <th>Deyistir</th>
+                        </tr>
+                    </thead>
+             
+                    <tbody>
+                        {% for list in conten %}
+                        <tr>
+                            <td>{{list.id}}</td>
+                            <td>{{list.kod}}</td>
+                            <td>{{list.azSalary}}</td>
+                            <td>{{list.enSalary}}</td>
+                            <td>{{list.img}}</td>
+                            <td><a href="/delete3/{{list.id}}"><i class="far fa-trash-alt"></i></a></td>
+                            <td><a href="/yeni/{{list.id}}"><i class="fas fa-edit"></i></a></td>
+                        </tr>
+                        {% endfor %}
+                     
+                    
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+{% endblock pageContent %}

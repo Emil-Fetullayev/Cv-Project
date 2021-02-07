@@ -1,0 +1,25 @@
+{% extends 'admin/layout.html' %}
+
+
+{% block pageContent %}
+<h1 class="mt-4">Yeni Melumat elave et</h1>
+<form action='/admin/addfaydali2' method="POST" enctype="multipart/form-data">
+    <div class="form-group">
+        <label for="title2">Title</label>
+        <input name='title2' type="text" class="form-control" id="newsHeading" aria-describedby="emailHelp" placeholder="Xəbər başlığı">
+    </div>
+    <div class="form-group">
+        <label for="description2">Description</label>
+        <input name='description2' type="text" class="form-control" id="newsHeading" aria-describedby="emailHelp" placeholder="Xəbər başlığı">
+    </div>
+
+    <div class="form-group">
+        <label for="Photo2">Şəkil</label>
+        <input name='Photo2' type="file" class="form-control" id="newsHeading" aria-describedby="emailHelp" placeholder="Xəbər başlığı">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+
+{% endblock pageContent %}

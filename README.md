@@ -1,44 +1,43 @@
 # Cv-Project
 
 # Day 01
-   * 1-ci səhifədə lahiyənin Header/Main/Footer bölümünün dizaynı və qurulması 
-   * Header/Main/Footer hissəsinin responsive hala gətirilməsi
+   * Design and build the Header / Main / Footer section of the project on page 1
+   * Making the Header / Main / Footer part responsive
   
 # Day 02
-   * 2-ci səhifədə lahiyənin Main bölümünün dizaynı və qurulması 
-   * Main hissəsinin responsive hala gətirilməsi
+   * Design and construction of the Main section of the project on page 2
+   * Making the main part responsive
 
 # Day 03
-   * Javascriptin tətbiqi ilə hamburger menyusunun yaradılması
-   * 3-cü və 4-cü səhifələrdə lahiyənin qurulması
+   * Creating a hamburger menu using Javascript
+   * Build the project on pages 3 and 4
 
 # Day 04
-   * 3-cü və 4-cü səhifələrdə lahiyənin responsive hala gətirilməsi
+   * Making the project responsive on pages 3 and 4
 
 # Day 05
-   * Footer bölümünün düzəliş edilməsi
-   * İconların png olaraq yerləşdirilməsi
+   * Editing the footer section
+   * Placing icons as png
 
 # Day 06
-   * Cv-yə click olunduğu zaman açılan ətraflı məlumat hissəsinin yaradılması və responsive hala gətirilməsi
+   * Create and make responsive the details section that opens when you click on the CV
 
 # Day 07
-   * Cv Hazırlama bölümündə pagination əlavə olunması 
+   *Adding pagination in the Cv Preparation section
 
 # Day 08
-   * Faydalı Məlumatlar bölümündə javascriptin tətbiqi ilə Kateqoriya bölümünün hazırlanması
-
+   * Create a Category section with the application of javascript in the Useful Data section
 # Day 09
-   * Front Lahiyənin Yekunlaşdırılması
+   * Front Project Completion
 
 # Day 10
-   * BluePrint məntiqindən istifadə edərək css, js, python və templatlər papkalara ayrıldı
-   * Əsas Səhifə,Cv Hazırlama,Faydalı Məlumatlar və Haqqımızda səifəsi üçün modal yaradıldı
+   * Using BluePrint logic, css, js, python, and templates were divided into folders
+   * Modal created for Home, Cv Preparation, Useful Information and About Us page
 
 # Day 11
-   * Admin bölümündə database quruldu və Əsas səhifədə main bölməsi dinamik hala gətirildi
-   * Əsas səhifə bölümünə filter tətbiq olundu
+   * The database was created in the admin section and the main section on the main page was made dynamic
+   * A filter has been applied to the main page section
 
 # Day 12
-   * Cv Hazırlama, Faydalı Məlumatlar, Haqqımızda bölməsi dinamik hala gətirildi və filter tətbiq olundu
+   * Cv Preparation, Useful Information, About Us section has been made dynamic and a filter has been applied
   
